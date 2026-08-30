@@ -28,6 +28,7 @@ Route::prefix('v1')->group(function () {
 
     Route::get('/map/incidents', [MapController::class, 'incidents']);
     Route::get('/announcements', [AnnouncementController::class, 'active']);
+    Route::get('/incidents/track/{reference_number}', [IncidentController::class, 'track']);
 
     // Authenticated Routes
     Route::middleware('auth:sanctum')->group(function () {

@@ -142,4 +142,24 @@ class IncidentController extends Controller
             'feedback' => $feedback,
         ]);
     }
+
+    public function track($referenceNumber)
+    {
+        $incident = Incident::with([
+            'category',
+            'activeAssignment.team',
+            'media',
+            'updates.updater',
+            'statusHistories.changedBy'
+        ])->where('reference_number', $referenceNumber)->first();
+
+        if (!$incident) {
+            return response()->json(['message' => 'Incident reference not found.'], 404);
+        }
+
+        return response()->json([
+            'data' => new IncidentResource($incident)
+        ]);
+    }
 }
+

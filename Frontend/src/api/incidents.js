@@ -17,4 +17,6 @@ export const incidentsApi = {
   deleteMedia: (id, mediaId) => api.delete(`/incidents/${id}/media/${mediaId}`),
   getTimeline: (id) => api.get(`/incidents/${id}/timeline`),
   submitFeedback: (id, data) => api.post(`/incidents/${id}/feedback`, data),
+  trackIncident: (ref) => api.get(`/incidents/track/${encodeURIComponent(ref)}`),
 };
+

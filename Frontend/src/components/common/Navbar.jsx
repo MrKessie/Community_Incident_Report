@@ -46,16 +46,23 @@ export default function Navbar() {
           </Link>
 
           {/* Navigation Links */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-5">
             <Link to="/" className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium text-sm transition-colors">
               Home
             </Link>
             <Link to="/map" className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium text-sm transition-colors">
-              Public Map
+              Live Map
             </Link>
-            <Link to="/report-anonymous" className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium text-sm transition-colors">
-              Report Incident
+            <Link to="/track" className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium text-sm transition-colors">
+              Track Incident
             </Link>
+            <Link to="/emergency-contacts" className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium text-sm transition-colors">
+              Emergency Hotlines
+            </Link>
+            <Link to="/incidents/new" className="text-rose-600 dark:text-rose-400 hover:text-rose-500 font-semibold text-sm transition-colors">
+              + Report Hazard
+            </Link>
+
 
             {isAuthenticated && (
               <>

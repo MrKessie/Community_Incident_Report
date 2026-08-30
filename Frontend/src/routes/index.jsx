@@ -7,6 +7,8 @@ import RoleRoute from './RoleRoute';
 import LandingPage from '../pages/public/LandingPage';
 import PublicMapPage from '../pages/public/PublicMapPage';
 import AnonymousReportPage from '../pages/public/AnonymousReportPage';
+import TrackIncidentPage from '../pages/public/TrackIncidentPage';
+import EmergencyContactsPage from '../pages/public/EmergencyContactsPage';
 
 // Auth Pages
 import LoginPage from '../pages/auth/LoginPage';
@@ -25,6 +27,8 @@ import ProfilePage from '../pages/reporter/ProfilePage';
 import AdminDashboard from '../pages/admin/AdminDashboard';
 import AllIncidentsPage from '../pages/admin/AllIncidentsPage';
 import IncidentManagePage from '../pages/admin/IncidentManagePage';
+import LiveDispatchPage from '../pages/admin/LiveDispatchPage';
+import ReportsPage from '../pages/admin/ReportsPage';
 import UsersPage from '../pages/admin/UsersPage';
 import TeamsPage from '../pages/admin/TeamsPage';
 import CategoriesPage from '../pages/admin/CategoriesPage';
@@ -37,6 +41,7 @@ import SettingsPage from '../pages/admin/SettingsPage';
 import TeamDashboard from '../pages/team/TeamDashboard';
 import AssignedIncidentsPage from '../pages/team/AssignedIncidentsPage';
 import IncidentResponsePage from '../pages/team/IncidentResponsePage';
+import FieldActionPage from '../pages/team/FieldActionPage';
 
 // Error Pages
 import NotFoundPage from '../pages/errors/NotFoundPage';
@@ -56,6 +61,10 @@ export default function AppRoutes() {
       <Route path="/reset-password" element={<ResetPasswordPage />} />
       <Route path="/map" element={<PublicMapPage />} />
       <Route path="/report-anonymous" element={<AnonymousReportPage />} />
+      <Route path="/track" element={<TrackIncidentPage />} />
+      <Route path="/track/:ref" element={<TrackIncidentPage />} />
+      <Route path="/emergency-contacts" element={<EmergencyContactsPage />} />
+      <Route path="/safety-guides" element={<EmergencyContactsPage />} />
 
       {/* Notifications Route */}
       <Route
@@ -131,6 +140,30 @@ export default function AppRoutes() {
         element={
           <RoleRoute roles={['admin', 'super_admin']}>
             <AllIncidentsPage />
+          </RoleRoute>
+        }
+      />
+      <Route
+        path="/admin/dispatch"
+        element={
+          <RoleRoute roles={['admin', 'super_admin']}>
+            <LiveDispatchPage />
+          </RoleRoute>
+        }
+      />
+      <Route
+        path="/admin/live-map"
+        element={
+          <RoleRoute roles={['admin', 'super_admin']}>
+            <LiveDispatchPage />
+          </RoleRoute>
+        }
+      />
+      <Route
+        path="/admin/reports"
+        element={
+          <RoleRoute roles={['admin', 'super_admin']}>
+            <ReportsPage />
           </RoleRoute>
         }
       />
@@ -229,6 +262,14 @@ export default function AppRoutes() {
         element={
           <RoleRoute roles={['response_team', 'admin', 'super_admin']}>
             <IncidentResponsePage />
+          </RoleRoute>
+        }
+      />
+      <Route
+        path="/team/incidents/:id/field"
+        element={
+          <RoleRoute roles={['response_team', 'admin', 'super_admin']}>
+            <FieldActionPage />
           </RoleRoute>
         }
       />
