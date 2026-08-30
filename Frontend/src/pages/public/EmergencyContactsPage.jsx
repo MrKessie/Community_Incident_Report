@@ -296,7 +296,7 @@ export default function EmergencyContactsPage() {
         </section>
 
         {/* Bottom Report CTA */}
-        <section className="bg-gradient-to-r from-indigo-950 via-slate-900 to-slate-950 border border-indigo-500/30 rounded-3xl p-8 text-center space-y-4 shadow-2xl">
+        <section className="bg-slate-900 border border-slate-800 rounded-3xl p-8 text-center space-y-4 shadow-2xl">
           <h3 className="text-2xl font-black text-white">Witnessing an Active Incident?</h3>
           <p className="text-xs text-slate-300 max-w-xl mx-auto">
             Log the location, upload photos, and dispatch municipal services immediately through our secure community portal.
@@ -304,7 +304,7 @@ export default function EmergencyContactsPage() {
           <div className="flex flex-wrap justify-center gap-4 pt-2">
             <Link
               to="/incidents/new"
-              className="px-6 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow-lg shadow-indigo-600/30 transition"
+              className="px-6 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-lg shadow-emerald-600/30 transition"
             >
               Report Incident Now
             </Link>

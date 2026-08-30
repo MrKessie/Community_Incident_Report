@@ -42,6 +42,8 @@ a.bg-brand-soft svg.lucide,
 button.bg-rose-600 svg.lucide,
 button.bg-amber-500 svg.lucide,
 button.bg-emerald-600 svg.lucide,
+a.bg-emerald-600 svg.lucide,
+.bg-emerald-600 svg.lucide,
 .bg-brand svg.lucide,
 .bg-brand-soft svg.lucide {
   color: #ffffff !important;

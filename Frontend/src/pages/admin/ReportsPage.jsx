@@ -74,7 +74,7 @@ export default function ReportsPage() {
               <button
                 onClick={handleExportCSV}
                 disabled={exporting}
-                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold transition flex items-center gap-2 shadow-lg shadow-emerald-600/20 cursor-pointer"
+                className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition flex items-center gap-2 shadow-lg shadow-emerald-600/20 cursor-pointer"
               >
                 <Download className="w-4 h-4" />
                 <span>{exporting ? 'Exporting...' : 'Export Complete CSV'}</span>

@@ -86,7 +86,7 @@ export default function LandingPage() {
 
             <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight">
               Report Community Hazards.{' '}
-              <span className="bg-gradient-to-r from-indigo-400 via-sky-400 to-teal-400 bg-clip-text text-transparent">
+              <span className="text-emerald-400">
                 Mobilize Responders.
               </span>
             </h1>
@@ -99,7 +99,7 @@ export default function LandingPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
               <Link
                 to="/incidents/new"
-                className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-600 text-white font-extrabold text-sm rounded-2xl shadow-xl shadow-indigo-600/30 transition flex items-center justify-center space-x-2"
+                className="w-full sm:w-auto px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm rounded-2xl shadow-xl shadow-emerald-600/30 transition flex items-center justify-center space-x-2"
               >
                 <span>Report an Incident</span>
                 <ArrowRight className="w-4 h-4" />

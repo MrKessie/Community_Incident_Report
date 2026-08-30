@@ -144,7 +144,7 @@ export default function TrackIncidentPage() {
             <button
               type="submit"
               disabled={loading}
-              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-600 text-white text-xs font-bold transition shadow-md disabled:opacity-50 cursor-pointer"
+              className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition shadow-md disabled:opacity-50 cursor-pointer"
             >
               {loading ? 'Searching...' : 'Track'}
             </button>
@@ -336,7 +336,7 @@ export default function TrackIncidentPage() {
               <div className="space-y-6">
                 {/* Emergency Crew Card */}
                 {incident.active_assignment?.team ? (
-                  <div className="bg-gradient-to-br from-indigo-950/80 to-slate-900 border border-indigo-500/30 rounded-3xl p-6 shadow-xl space-y-4">
+                  <div className="bg-slate-900 border border-indigo-500/30 rounded-3xl p-6 shadow-xl space-y-4">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-2xl bg-indigo-600/30 border border-indigo-500/40 text-indigo-300 flex items-center justify-center">
                         <Truck className="w-5 h-5" />
