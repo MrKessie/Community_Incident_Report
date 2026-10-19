@@ -1,4 +1,4 @@
-# 🚨 Community Incident Reporting System (CIR System 3)
+# 🚨 Community Incident Reporting System (CIR System)
 
 [![Laravel](https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
 [![React](https://img.shields.io/badge/React-19.x-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
@@ -8,7 +8,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 [![Leaflet](https://img.shields.io/badge/Leaflet-1.9-199900?style=for-the-badge&logo=leaflet&logoColor=white)](https://leafletjs.com)
 
-An end-to-end, multi-platform emergency management and community response platform. **CIR System 3** empowers citizens to report public incidents, hazards, and emergency situations in real time while providing emergency dispatchers, municipal administrators, and first response teams (**Fire, Police, Medical EMS, Flood/Disaster Relief**) with tactical dispatch tools, geospatial radars, live tracking, and compliance analytics.
+An end-to-end, multi-platform emergency management and community response platform. **CIR System** empowers citizens to report public incidents, hazards, and emergency situations in real time while providing emergency dispatchers, municipal administrators, and first response teams (**Fire, Police, Medical EMS, Flood/Disaster Relief**) with tactical dispatch tools, geospatial radars, live tracking, and compliance analytics.
 
 ---
 
